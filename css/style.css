@@ -70,8 +70,16 @@ td { vertical-align: top; }
 }
 
 header, 
-#content,
 footer{
+  padding: 1em;
+  margin: 5px;
+  min-height: 4em;
+  border: 1px #ccc solid;
+  background-color: #eee;
+}
+
+
+#content{
   padding: 1em;
   margin: 5px;
   min-height: 4em;
@@ -84,8 +92,9 @@ footer{
 }
 
 .search-form-small input[type=submit]{
-  border: 1px solid #B0281A;
   background-color: #D94736;
+  padding       : 3px 1em 3px 1em;
+  border: none;
   color: #fff;
   outline: none;
   text-align: center;
@@ -101,11 +110,13 @@ footer{
 }
 
 .search-form-small input[type=text]:focus{
-  width         : 20em;
   border        : 1px solid #000;
   outline       : none;
 }
 
+.expand input[type=text]:focus{
+  width         : 20em;
+}
 
 @media only screen and (min-width: 35em) {
   
