@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+     <h1>Demo HTML5 Placeholder for Oldies</h1>
+    </header>
+    <div id="content">
+      <h2>Without Submit Button</h2>
+      <fieldset>
+      <form class="search-form-small" action="index.html" method="get">
+        <input type="text" name="search" id="search-top" value="" placeholder="search">
+       </form>
+      </fieldset>
+      <h2>With Submit Button</h2>
+      <fieldset>
+        <form class="search-form-small" action="index.html" method="get">
+          <label for="search-top">Search</label>
+          <input type="text" name="search" id="search-content" value="" placeholder="search">
+          <input type="submit" value="search">
+        </form> 
+      </fieldset>
+    </div>
+    <footer>
+    </footer>
+  </div>
+  <script src="js/libs/jquery-1.7.2.min.js"></script>
+  <script src="js/jquery.placeholder-for-oldies.js"></script>
+  <script>
+  $(document).ready(function() {
+
+    $('.search-form-small').placeholderforoldies({
+      elementid: "search-top"
+    });
+
+    $('.search-form-small').placeholderforoldies({
+      elementid: "search-content"
+    });
+
+  });
+  </script>
+</body>
+</html>
