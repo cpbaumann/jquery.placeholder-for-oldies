@@ -1,8 +1,10 @@
 # HTML5 Placeholder for Oldies jQuery Plugin (beta)
 
+Adds HTML5 Placeholder like behavior for non HTML5 supporting Browsers. 
+
 ## Demo
 
-[http://spielwiese.datenschubse.de/jquery-plugins/jquery.placeholder-for-oldies/](http://spielwiese.datenschubse.de/jquery-plugins/jquery.placeholder-for-oldies/)
+[Demo jquery-plugins: jquery.placeholder-for-oldies/](http://spielwiese.datenschubse.de/jquery-plugins/jquery.placeholder-for-oldies/)
 
 ## Usage
 
@@ -34,13 +36,13 @@ $('#search-form').placeholderforoldies();
 or to adress all elements
 
 ```js
-   $('body').placeholderforoldies();
+$('body').placeholderforoldies();
 ```
 
 ## Notes
 
 * Requires jQuery 1.7+. 
-* tested in IE 8,9
+* allready tested in IE 8,9
 
 
 ## License
