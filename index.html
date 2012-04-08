@@ -11,18 +11,26 @@
      <h1>Demo HTML5 Placeholder for Oldies</h1>
     </header>
     <div id="content">
-      <h2>Without Submit Button</h2>
-      <fieldset>
+
       <form class="search-form-small expand" action="index.html" method="get">
-        <input type="text" name="search" id="search-top" value="" placeholder="search">
-       </form>
-      </fieldset>
-      <h2>With Submit Button</h2>
+        <input type="text" name="search-1" id="search-content" value="" placeholder="search">
+      </form> 
+
       <fieldset>
-        <form class="search-form-small" action="index.html" method="get">
-          <label for="search-top">Search</label>
-          <input type="text" name="search" id="search-content" value="" placeholder="search">
-          <input type="submit" value="search">
+        <form class="search-form-small" id="search-form" action="index.html" method="get">
+          <ul>
+            <li>
+              <label for="search-content-2">label 2</label>
+              <input type="text" name="search-2" id="search-content-2" placeholder="search 2">
+            </li>
+            <li>
+              <label for="search-content-3">label 3</label>
+              <input type="text" name="search-3" id="search-content-3" placeholder="search 3">
+            </li>
+            <li>
+             <input type="submit" value="search">
+            </li>
+          </ul>
         </form> 
       </fieldset>
     </div>
@@ -33,12 +41,12 @@
   <script src="js/jquery.placeholder-for-oldies.js"></script>
   <script>
   $(document).ready(function() {
+    
     $('.search-form-small').placeholderforoldies({
-      elementid: "search-top"
+      elementId: "#search-content"
     });
-    $('.search-form-small').placeholderforoldies({
-      elementid: "search-content"
-    });
+
+    $('#search-form').placeholderforoldies();    
   });
   </script>
 </body>

@@ -7,37 +7,46 @@
         placeholderforoldies: function(options) {
            
            var defaults = {
-                elementid: "elementid"
+                elementId: "default"
             };
 
             var option = $.extend(defaults, options);
-            var support = 'placeholder' in document.createElement('input');
+            var supportinput = 'placeholder' in document.createElement('input');
+            var supporttextarea = 'placeholder' in document.createElement('textarea');
 
-            if(support) {
+            if(supportinput && supporttextarea) {
                 return this;
             }
 
             return this.each(function() {
 
                 var obj = $(this);
-                var elementid = '#'+option.elementid;
-                var placeholder = $(elementid).attr('placeholder');
+                if (option.elementId != 'default'){
+                    var element = $(option.elementId, obj);   
+                }else{
+                    var element = $('*[placeholder]', obj);
+                }
 
-                if($(elementid).val() == '') {
-                    $(elementid).val(placeholder);
-                }   
+                element.each(function() {
 
-                $(elementid).click(function() {
-                    if($(elementid).val() == placeholder){
-                        $(elementid).val('')
+                    var placeholder = $(this).attr('placeholder');
+                    if($(this).val() == '') {
+                        $(this).val(placeholder);
                     }
+
+                    $(this).click(function() {
+                        if($(this).val() == placeholder){
+                            $(this).val('');
+                        }
+                    });
+
+                    $(this).blur(function() {
+                        if($(this).val() == ''){
+                            $(this).val(placeholder);
+                        }
+                    });
                 });
 
-                $(elementid).blur(function() {
-                    if($(elementid).val() == ''){
-                        $(elementid).val(placeholder);
-                    }
-                });
             });
         }
     });

@@ -86,9 +86,19 @@ footer{
   border: 1px #ccc solid;
 }
 
+#content ul{
+  padding: 0;
+  margin: 1.5em 0 0 0;
+  list-style: none;
+}
+
+#content li{
+  margin: 0 0 0.5em 0;
+}
+
 /* search-form-small */
 .search-form-small label{
-  display: block;
+  display: inline;
 }
 
 .search-form-small input[type=submit]{
