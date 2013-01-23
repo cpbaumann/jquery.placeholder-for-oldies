@@ -45,8 +45,17 @@
                             $(this).val(placeholder);
                         }
                     });
-                });
 
+
+                    $(this).parents('form').submit(function() {
+                        $(this).find('[placeholder]').each(function() {
+                            if ($(this).val() == $(this).attr('placeholder')) {
+                                $(this).val('');
+                            }
+                        })
+                    });
+
+                });
             });
         }
     });
