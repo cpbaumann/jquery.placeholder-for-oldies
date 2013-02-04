@@ -1,4 +1,4 @@
-# HTML5 Placeholder for Oldies jQuery Plugin (beta)
+# HTML5 Placeholder for Oldies jQuery Plugin
 
 Adds HTML5 Placeholder like behavior for non HTML5 supporting Browsers. 
 
