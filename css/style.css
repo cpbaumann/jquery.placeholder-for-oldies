@@ -96,6 +96,16 @@ footer{
   margin: 0 0 0.5em 0;
 }
 
+
+:-moz-placeholder,
+::-moz-placeholder,
+::-webkit-input-placeholder,
+.placeholder{
+  color: #aaa;
+}
+
+
+
 /* search-form-small */
 .search-form-small label{
   display: inline;

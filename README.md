@@ -12,8 +12,8 @@ Adds HTML5 Placeholder like behavior for non HTML5 supporting Browsers.
 
 ```html
 <form class="search-form-small" id="search-form" action="" method="get">
-  <input type="text" name="search" id="search-content1" value="" placeholder="search">
-  <input type="text" name="search" id="search-content2" value="" placeholder="search">
+  <input type="text" name="search" id="search-content1" value="" placeholder="search" class="placeholder">
+  <input type="text" name="search" id="search-content2" value="" placeholder="search" class="placeholder">
 </form> 
 ```
 
@@ -42,7 +42,7 @@ $('body').placeholderforoldies();
 ## Notes
 
 * Requires jQuery 1.7+. 
-* allready tested in IE 8,9
+* tested in IE 7,8,9
 
 
 ## License

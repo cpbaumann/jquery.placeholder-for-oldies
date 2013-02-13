@@ -22,7 +22,7 @@
 
                 var obj = $(this);
                 if (option.elementId != 'default'){
-                    var element = $(option.elementId, obj);   
+                    var element = $(option.elementId, obj);
                 }else{
                     var element = $('*[placeholder]', obj);
                 }
@@ -37,12 +37,14 @@
                     $(this).click(function() {
                         if($(this).val() == placeholder){
                             $(this).val('');
+                            $(this).removeClass('placeholder');
                         }
                     });
 
                     $(this).blur(function() {
                         if($(this).val() == ''){
                             $(this).val(placeholder);
+                            $(this).addClass('placeholder');
                         }
                     });
 
