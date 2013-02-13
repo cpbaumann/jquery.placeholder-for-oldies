@@ -32,6 +32,7 @@
                     var placeholder = $(this).attr('placeholder');
                     if($(this).val() == '') {
                         $(this).val(placeholder);
+                        $(this).addClass('placeholder');
                     }
 
                     $(this).click(function() {
