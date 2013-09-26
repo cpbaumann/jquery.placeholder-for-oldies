@@ -3,6 +3,7 @@
 */
 
 (function($) {
+"use strict";
     $.fn.extend({
         placeholderforoldies: function(options) {
            
