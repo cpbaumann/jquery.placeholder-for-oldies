@@ -96,10 +96,6 @@ footer{
   margin: 0 0 0.5em 0;
 }
 
-input,
-textarea{
-  color: #000;
-}
 
 
 /* search-form-small */
@@ -144,9 +140,10 @@ textarea{
     color:    #ccc;
 }
 
+.placeholder,
 input.placeholder,
 textarea.placeholder{ /* Internet Explorer minor 10 with plugin */
-   color:    #ccc;
+   color:   red;
 }
 
 
