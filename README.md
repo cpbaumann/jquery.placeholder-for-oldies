@@ -2,10 +2,6 @@
 
 Adds HTML5 Placeholder like behavior for non HTML5 supporting Browsers. 
 
-## Demo
-
-[Demo jquery-plugins: jquery.placeholder-for-oldies/](http://spielwiese.datenschubse.de/jquery-plugins/jquery.placeholder-for-oldies/)
-
 ## Usage
 
 ### HTML
